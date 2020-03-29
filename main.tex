@@ -6,6 +6,42 @@
 \usepackage{tikz}
 \usepackage{tcolorbox}
 \usepackage{lmodern}
+
+\newcommand{\degr}{\ensuremath{^\circ}} 
+\newcommand{\const}{\ensuremath{\mathfrak{const}}} %constant
+\renewcommand{\C}{\ensuremath{\mathfrak{C}}}% another constant
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+\def\ul{\underline}
+\newcommand{\del}{\partial}
+\newcommand{\B}[1]{\mathbf{#1}}
+\newcommand{\F}{\frac{F^2}{4}}
+
+\newcommand{\units}[1]{\ensuremath{\mathrm{#1}}}
+\newcommand{\order}[1]{\mathcal{O}(#1)}
+\newcommand{\avg}[1]{\left\langle #1 \right\rangle}
+
+\newcommand{\mev}{\units{MeV}}
+\newcommand{\gev}{\units{GeV}}
+\newcommand{\tev}{\units{TeV}}
+\newcommand{\cm}{\units{cm}}
+\newcommand{\g}{\units{g}}
+\newcommand{\s}{\units{s}}
+\newcommand{\sr}{\units{sr}}
+\newcommand{\pb}{\text{pb}}
+\newcommand{\yr}{\text{yr}}
+
+\newcommand{\eq}[1]{Eq.~(\ref{#1})}
+\newcommand{\fig}[1]{Fig.~\ref{#1}}
+%\newcommand{\ul}[1]{{\underline{#1}}}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\trace}[1]{\mathrm{Tr}\left\{#1\right\}}
+
+
+
+
 \definecolor{Blacky}{HTML}{000000}
 \definecolor{Choke}{RGB}{255,255,255}
 \pagecolor{Blacky}
@@ -18,5 +54,6 @@
 %   \everymath={\sf}
 
 \begin{document}
+\include{equation1}
 
 \end{document}
