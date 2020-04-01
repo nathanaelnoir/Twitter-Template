@@ -7,6 +7,13 @@
 \usepackage{tcolorbox}
 \usepackage{lmodern}
 
+
+
+
+
+
+
+
 \newcommand{\degr}{\ensuremath{^\circ}} 
 \newcommand{\const}{\ensuremath{\mathfrak{const}}} %constant
 \renewcommand{\C}{\ensuremath{\mathfrak{C}}}% another constant
@@ -54,6 +61,10 @@
 %   \everymath={\sf}
 
 \begin{document}
-\include{equation1}
-
+\be
+\begin{split}
+\int \;(a+b\, \theta ) \, \mathrm{d}\theta &= \del_{\theta}(a+b\, \theta )\\
+\implies \int  \, \mathrm{d}\theta &= \del_{\theta}
+\end{split}
+\ee
 \end{document}
