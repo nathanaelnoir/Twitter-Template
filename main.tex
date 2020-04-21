@@ -6,6 +6,7 @@
 \usepackage{tikz}
 \usepackage{tcolorbox}
 \usepackage{lmodern}
+\usepackage{braket}
 
 
 
@@ -49,6 +50,7 @@
 
 
 
+
 \definecolor{Blacky}{HTML}{000000}
 \definecolor{Choke}{RGB}{255,255,255}
 \pagecolor{Blacky}
@@ -63,7 +65,14 @@
 \begin{document}
 \be
 
-\Huge{1}=\Huge{0.}\huge{9}\LARGE{9}\Large{9}\large{9}\normalsize{9}\small{9}\footnotesize{9}\scriptsize{9}\tiny{9}\tiny{\dots}
+\bra{0}\operatorname{H}\ket{0}= -\frac{\pi m^{4}}{4}\,\delta^{(3)}(0)\,\Gamma(-2)
 
+\ee
+\be{}
+\begin{aligned}\langle 0|H| 0\rangle &=\frac{1}{2} \int \frac{\mathrm{d}^{3} \boldsymbol{k}}{(2 \pi)^3}\, E_{k}\left\langle 0\left|\left(a^{\dagger}(\boldsymbol{k}) a(\boldsymbol{k})+a(\boldsymbol{k}) a^{\dagger}(\boldsymbol{k})\right)\right| 0\right\rangle \\ &=\frac{1}{2} \int \frac{\mathrm{d}^{3} \boldsymbol{k}}{(2 \pi)^3}\, E_{k}\left\langle 0\left| a^{\dagger}(\boldsymbol{k})a(\boldsymbol{k})+\left[a(\boldsymbol{k}), a^{\dagger}(\boldsymbol{k})\right]\right| 0\right\rangle \\ &=\frac{1}{2} \int \frac{\mathrm{d}^{3} \boldsymbol{k}}{(2 \pi)^3}\, E_{k}\left\langle 0\left|[a(\boldsymbol{k}), a^{\dagger}(\boldsymbol{k})\right]\right| 0\right\rangle \\ &=\frac{1}{2}\, \delta^{(3)}(0) \int \mathrm{d}^{3} \boldsymbol{k} \,\sqrt{\boldsymbol{k}^{2}+m^{2}} \\ &=2 \pi \,\delta^{(3)}(0) \int_{0}^{\infty} \mathrm{d} k\, k^{2} \sqrt{k^{2}+m^{2}} \\
+
+ &=\frac{1}{2} \int \frac{\mathrm{d}^{3} \boldsymbol{k}}{(2 \pi)^3}\, E_{k}\left\langle 0\left|[a(\boldsymbol{k}), a^{\dagger}(\boldsymbol{k})\right]\right| 0\right\rangle 
+
+\end{aligned}
 \ee
 \end{document}
